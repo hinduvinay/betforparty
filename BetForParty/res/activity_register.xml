@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:layout_centerVertical="true"
+    android:background="@drawable/welcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <EditText
+                android:id="@+id/remail"
+                android:hint="Enter Softvision ID"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="" />
+
+            <EditText
+                android:id="@+id/rpassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/remail"
+                android:layout_marginTop="50dp"
+                />
+
+            <Button
+                android:id="@+id/btrregister"
+                android:text="@string/register"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/rpassword"
+                android:layout_marginTop="70dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
